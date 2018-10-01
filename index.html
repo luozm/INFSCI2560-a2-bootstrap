@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Zhimeng Luo</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Luozm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nbControl" aria-controls="nbControl"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nbControl">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a onclick = "javascript:document.getElementById('content').src='pages/home.html'">
+                        <img src="icons/home.png" alt="home" height="24" width="24">
+                        <span class="button-label">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick = "javascript:document.getElementById('content').src='pages/about.html'">
+                        <img src="icons/about.png" alt="about" height="24" width="24">
+                        <span class="button-label">About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick = "javascript:document.getElementById('content').src='pages/projects.html'">
+                        <img src="icons/project.png" alt="projects" height="24" width="24">
+                        <span class="button-label">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick = "javascript:document.getElementById('content').src='pages/contact.html'">
+                        <img src="icons/contact.png" alt="contact" height="24" width="24">
+                        <span class="button-label">Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick = "javascript:document.getElementById('content').src='pages/blog.html'">
+                        <img src="icons/blog.png" alt="blog" height="24" width="24">
+                        <span class="button-label">Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick = "javascript:document.getElementById('content').src='pages/smart.html'">
+                        <img src="icons/calculator.png" alt="calculator" height="24" width="24">
+                        <span class="button-label">Calculator</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <iframe id="content" src="pages/home.html" frameborder="0" style="width:100%;height:100%;">
+            </iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-sm-4 offset-sm-2">
+                    <div style="text-align:center">
+                        <div class="footer-title">
+                            Contact
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-phone">
+                                <img src="icons/phone.png" alt="phone" height="24" width="24">
+                                <a>+1 (412)584-0975</a>
+                            </div>
+                            <div class="footer-email">
+                                <img src="icons/email.png" alt="email" height="24" width="24">
+                                <a href="mailto:ZHL123@pitt.edu" style="text-decoration:none;color:white;">ZHL123@pitt.edu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 offset-sm-2">
+                    <div style="text-align:center">
+                        <div class="follow-up">
+                            Follow Me
+                        </div>
+                        <div class="follow-up icons">
+                            <a href="https://www.facebook.com/profile.php?id=100007905434368">
+                                <img src="icons/facebook.png" alt="facebook" height="24" width="24">
+                            </a>
+                            <a href="https://github.com/luozm">
+                                <img src="icons/github.png" alt="github" height="24" width="24">
+                            </a>
+                            <a href="https://www.linkedin.com/in/zhimengluo/">
+                                <img src="icons/linkedin.png" alt="linkedin" height="24" width="24">
+                            </a>
+                            <a href="https://luozm.github.io/">
+                                <img src="icons/blog.png" alt="blog" height="24" width="24">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/CalPageHeight.js"></script>
+
+</body>
+</html>

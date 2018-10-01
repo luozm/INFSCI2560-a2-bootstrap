@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .free{ color: black; }
+        .selected{ text-decoration: line-through; background-color: #ffdddd;}
+        .chosen {color: black; font-size: 12pt; list-style-type: circle;}
+    </style>
+
+    <script type="text/javascript" language="JavaScript">
+        function select(obj){
+            id = obj.getAttribute("id");
+            carea_elem = document.getElementById("S");
+            newchild = obj.cloneNode(true);
+            newchild.setAttribute("onclick", "deselect(this)");
+            obj.setAttribute("class", "selected");
+            newchild.setAttribute("class", "chosen");
+            hw = prompt("How many "+ obj.childNodes[0].childNodes[0].nodeValue+"s do you want" , "0");
+            newchild.childNodes[0].childNodes[0].nodeValue = hw+" "+ obj.childNodes[0].childNodes[0].nodeValue + "s = ";
+            newchild.childNodes[1].childNodes[0].nodeValue = 1.0*hw*obj.childNodes[1].childNodes[0].nodeValue;
+            carea_elem.appendChild(newchild);
+        }
+
+        function deselect(obj){
+            nid = obj.getAttribute("id");
+            carea_elem = obj.parentNode
+            carea_elem.removeChild(obj);
+            ref = document.getElementById(nid);
+            ref.setAttribute("class", "free");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <center>
+                <h1>Grocery Store Calculator</h1>
+                <p>Please click items you want to choose them, and click it in Chosen Items to delet it.</p>
+                <h2>Chosen Items</h2>
+            </center>
+
+            <div id ="S"></div>
+            <center><h2>Categories</h2></center>                     
+            <h3>Meats</h3>
+            <table>
+                <tr onclick=select(this) id = "11"><td class = "free" >Egg </td><td>1.62</td></tr>
+                <tr onclick=select(this) id = "12"><td class = "free" >Chicken </td><td>3.78</td></tr>
+                <tr onclick=select(this) id = "13"><td class = "free" >Pork </td><td>4.78</td></tr>
+                <tr onclick=select(this) id = "14"><td class = "free" >Beef </td><td>5.78</td></tr>
+            </table>
+            <h3>Fruits</h3>
+            <table>
+                <tr onclick=select(this) id = "21"><td class = "free" >Apple </td><td>1.78</td></tr>
+                <tr onclick=select(this) id = "22"><td class = "free" >Mango </td><td>2.78 </td></tr>
+                <tr onclick=select(this) id = "23"><td class = "free" >Banana </td><td>0.78</td></tr>
+            </table>
+            <h3>Beverages</h3>
+            <table>
+                <tr onclick=select(this) id = "31"><td class = "free" >Coke </td><td>3.99</td></tr>
+                <tr onclick=select(this) id = "32"><td class = "free" >Diet Coke </td><td>3.99 </td></tr>
+                <tr onclick=select(this) id = "33"><td class = "free" >Dr. Pepper </td><td>4.78</td></tr>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding-top: 50px;
+  min-height: 100%;
+  position: relative;
+  background-color: white;
+}
+.navbar {
+  background: #034CD4;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+/* .container .content {
+  width: 100%;
+  align-content: center;
+} */
+
+.content .intro {
+  display: inline-block;
+}
+.content .pic {
+  float: right;
+}
+.content:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.content .pic img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.content .contact-info {
+  border-bottom: 1px solid cadetblue;
+  align-content: center;
+}
+
+.title-block {
+  margin-right: 30px;
+  color: azure;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  word-break: keep-all;
+}
+
+.button-label {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: gray;
+  text-align: center;
+  margin-left: 5px;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+.nav-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+}
+.nav-button {
+  color: gray;
+}
+.nav-button:hover {
+  color: azure;
+}
+.nav-button:hover .button-label {
+  color: azure;
+}
+.nav-button.active {
+  color: azure;
+}
+.nav-button.active .button-label {
+  color: azure;
+}
+.footer {
+  /* margin: 0px auto; */
+  padding: 20px 0px 20px 0px;
+  background: #02832D;
+}
+.footer .footer-title {
+  margin-top: 50px;
+  color: azure;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.footer .footer-content {
+  margin-top: 20px;
+  color: azure;
+  font-family: sans-serif;
+  font-size: 18px;
+  display: block;
+}
+.footer .follow-up {
+  margin-top: 50px;
+  color: azure;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+.follow-up.icons {
+  left: 0;
+  margin-top: 10px;
+}
